@@ -2,25 +2,27 @@
 <html lang="sr">
 <head>
   <meta charset="UTF-8" />
-  <title>Lista korisnika</title>
+  <title>Forma za korisnika</title>
   <link rel="stylesheet" href="../../dist/usersForm/usersForm.css" />
   <script type="module" src="../../dist/usersForm/usersForm.js"></script>
 </head>
 <body>
-  <h1>Lista korisnika</h1>
-
-  <table id="user-table">
-    <thead>
-      <tr>
-        <th>Korisničko ime</th>
-        <th>Ime</th>
-        <th>Prezime</th>
-        <th>Datum rođenja</th>
-      </tr>
-    </thead>
-    <tbody>
-
-    </tbody>
-  </table>
+  <h1>Dodaj/Izmeni korisnika</h1>
+  
+  <form id="user-form">
+    <label for="username">Korisničko ime:</label>
+    <input type="text" id="username" required>
+    
+    <label for="firstName">Ime:</label>
+    <input type="text" id="firstName" required>
+    
+    <label for="lastName">Prezime:</label>
+    <input type="text" id="lastName" required>
+    
+    <label for="birthDate">Datum rođenja:</label>
+    <input type="date" id="birthDate" required>
+    
+    <button type="button" id="submit">Sačuvaj</button>
+  </form>
 </body>
 </html>
